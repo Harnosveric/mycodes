@@ -1,0 +1,5 @@
+-- Write only the SQL statement that solves the problem and nothing else.
+
+Select A.firstName as "First Name", count(*) as "Number of Students"
+from students A
+group by A.firstName
