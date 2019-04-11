@@ -1,9 +1,3 @@
-
-# coding: utf-8
-
-# In[10]:
-
-
 ## LIBRARIES
 import numpy as np
 import pandas as pd
@@ -88,10 +82,3 @@ print(rfm_df.head())
 
 # save RFM Table to CSV format
 rfm_df.to_csv(r'E:\Tes Data Science\Soal 2\2019.04.03_Harnosveric Moranoud Simbolon_RFM.csv')
-
-
-# In[6]:
-
-
-monetary_df["Monetary"].sum()
-
