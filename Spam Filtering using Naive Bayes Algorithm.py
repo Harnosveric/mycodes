@@ -1,9 +1,3 @@
-
-# coding: utf-8
-
-# In[37]:
-
-
 ## LIBRARIES
 import numpy as np
 import pandas as pd
@@ -87,7 +81,7 @@ print("\nThe model with 100% precision, if any \n")
 print(models[models['Test Precision']==1].head(n=5))
 
 best_index = models[models['Test Precision']==1]['Test Accuracy'].idxmax()
-bayes = naive_bayes.MultinomialNB(alpha=list_alpha[best_index])
+bayes = naive_bayes.MultinomialNB(alpha=alphas[best_index])
 bayes.fit(X_train, y_train)
 print("\nBetween the highest possible precision, we are going to select which has more test accuracy, that is\n")
 print(models.iloc[best_index, :])
